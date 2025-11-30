@@ -1,75 +1,75 @@
 function favChar() {
     let Character =
-    document.getElementById('character').value;
+    document.getElementById('character').value.toLowerCase();
     let result = document.getElementById("formResult")
     let paragraph = document.getElementById("comment")
     let answer = "";
     switch (Character) {
         //robots!
-        case "Amor":
+        case "amor":
             answer = "Looks can be deceiving...";
             break;
         case "c0nnie":
             answer = "The most levelheaded, good choice!";
             break;
-        case "C0nnie":
+        case "c0nnie":
             answer = "The most levelheaded, good choice!";
             break;
-        case "SAI":
+        case "sai":
             answer = "Everyone loves a morally grey character!";
             break;
-        case "N":
+        case "n":
             answer = "Get in line buddy.";
             break;
-        case "Assistant":
+        case "assistant":
             answer = "Really??? I mean... alright...";
             break;
         //computers!
-        case "Aqua":
+        case "aqua":
             answer = "As the number one Aqua fan, I approve.";
             break;
-        case "Dav3":
+        case "dav3":
             answer = "Assistant is that you? Just kidding, Dav3's awesome.";
             break;
-        case "Ch33se":
+        case "ch33se":
             answer = "I've got some bad news for you...";
             break;
         case "002":
             answer = "YOU DON'T EVEN KNOW ANYTHING ABOUT HIM YET!";
             break;
-        case "Silva":
+        case "silva":
             answer = "(Don't tell anyone I told you this, but I actually designed her...)";
             break;
         //humans!
-        case "Leo":
+        case "leo":
             answer = "Grown ass man using :3";
             break;
-        case "Victor":
+        case "victor":
             answer = "Nobody thinks you're cool dude.";
             break;
-        case "Amber":
+        case "amber":
             answer = "As the number one Aqua fan, really?!?!";
             break;
-        case "Simon":
+        case "simon":
             answer = "There's actually no way";
             break;
-        case "Nalani":
+        case "nalani":
             answer = "You should see more of her soon!";
             break;
         //easter eggs
-        case "Chime":
+        case "chime":
             answer = "Dude that's my sona... ALSO SHE'S NOT CANON!";
             break;
-        case "Yes Man":
+        case "yes man":
             answer = "Shroomsie get off my website.";
             break;
-        case "Radon":
+        case "radon":
             answer = "WRONG ACCOUNT!!!";
             break;
-        case "Gerson":
+        case "gerson":
             answer = "As long as we don't give up, we can save them all.";
             break;
-        case "Bacon":
+        case "bacon":
             answer = "That's right everybody... it's your favorite boy...";
             break;
         case "/01":
@@ -78,29 +78,29 @@ function favChar() {
         case "01":
             answer = "DO NOT LET AQUA FIND OUT!!!";
             break;
-        case "Noodle":
+        case "noodle":
             answer = "Don't trust her...";
             break;
-        case "Shroomsie":
+        case "shroomsie":
             answer = "I get it, I look up to her artistic ability a lot";
             break;
-        case "Shr00msi3":
+        case "shr00msi3":
             answer = "I get it, I look up to her artistic ability a lot";
             break;
-        case "Shr00msie":
+        case "shr00msie":
             answer = "I get it, I look up to her artistic ability a lot";
             break;
-        case "Jimmy":
+        case "jimmy":
             answer = "That makes you the #1 amor hater by default";
             break;
-        case "The Lunch Machine":
+        case "the lunch machine":
             answer = "I'm guessing you're a joe addict...";
             break;
-        case "Cup":
+        case "cup":
             answer = "YOU GET IT!!!";
             break;
         default:
-            answer = "Character not recognized! Please don't forget the numbers and capitalization!";
+            answer = "Character not recognized! Please don't forget the numbers!";
             break;
     }
 paragraph.innerHTML = answer;
