@@ -1,0 +1,504 @@
+html,body{
+margin:0;
+}
+/*stars! */
+.star {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+    @media screen and (max-width: 520px) {
+        display: none;
+    }
+}
+.starfall {
+    content: "⭐";
+    position: absolute;
+    font-size: 3em;
+    opacity:0.9;
+    animation: fall linear infinite;
+    top: -20vh;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+@keyframes fall {
+0% {transform: translateY(-20vh);}
+20% {opacity: 1; transform: translateY(18vh);}
+100% {transform: translateY(170vh); scale:0.7; opacity: 0.2;}
+}
+
+
+/*first batch-------------------------*/
+.starfall:nth-child(1) {
+left: 94vw;
+animation-duration: 12s;
+animation-delay: 2s;
+}
+.starfall:nth-child(2) {
+left: 89vw;
+animation-duration: 12s;
+animation-delay: 4s;
+}
+.starfall:nth-child(3) {
+left: 94vw;
+animation-duration: 12s;
+animation-delay: 6s;
+}
+.starfall:nth-child(4) {
+left: 89vw;
+animation-duration: 12s;
+animation-delay: 8s;
+}
+.starfall:nth-child(5) {
+left: 94vw;
+animation-duration: 12s;
+animation-delay: 10s;
+}
+.starfall:nth-child(6) {
+left: 89vw;
+animation-duration: 12s;
+animation-delay: 12s;
+}
+/*second batch-------------------------*/
+.starfall:nth-child(7) {
+left: 79vw;
+animation-duration: 12s;
+animation-delay: 1s;
+}
+.starfall:nth-child(8) {
+left: 72vw;
+animation-duration: 12s;
+animation-delay: 3s;
+}
+.starfall:nth-child(9) {
+left: 79vw;
+animation-duration: 12s;
+animation-delay: 5s;
+}
+.starfall:nth-child(10) {
+left: 72vw;
+animation-duration: 12s;
+animation-delay: 7s;
+}
+.starfall:nth-child(11) {
+left: 79vw;
+animation-duration: 12s;
+animation-delay: 9s;
+}
+.starfall:nth-child(12) {
+left: 72vw;
+animation-duration: 12s;
+animation-delay: 11s;
+}
+
+.starfall:nth-child(13) {
+left: 1vw;
+animation-duration: 12s;
+animation-delay: 2s;
+}
+.starfall:nth-child(14) {
+left: 6vw;
+animation-duration: 12s;
+animation-delay: 4s;
+}
+.starfall:nth-child(15) {
+left: 1vw;
+animation-duration: 12s;
+animation-delay: 6s;
+}
+.starfall:nth-child(16) {
+left: 6vw;
+animation-duration: 12s;
+animation-delay: 8s;
+}
+.starfall:nth-child(17) {
+left: 1vw;
+animation-duration: 12s;
+animation-delay: 10s;
+}
+.starfall:nth-child(18) {
+left: 6vw;
+animation-duration: 12s;
+animation-delay: 12s;
+}
+/*second batch-------------------------*/
+.starfall:nth-child(19) {
+left: 16vw;
+animation-duration: 12s;
+animation-delay: 1s;
+}
+.starfall:nth-child(20) {
+left: 21vw;
+animation-duration: 12s;
+animation-delay: 3s;
+}
+.starfall:nth-child(21) {
+left: 16vw;
+animation-duration: 12s;
+animation-delay: 5s;
+}
+.starfall:nth-child(22) {
+left: 21vw;
+animation-duration: 12s;
+animation-delay: 7s;
+}
+.starfall:nth-child(23) {
+left: 16vw;
+animation-duration: 12s;
+animation-delay: 9s;
+}
+.starfall:nth-child(24) {
+left: 21vw;
+animation-duration: 12s;
+animation-delay: 11s;
+}
+
+
+h1 {
+    color:yellow;
+    white-space: nowrap;
+    font-size: 6vmax;
+    margin: 0%;
+}
+h1 a {
+    color: inherit;
+    white-space: inherit;
+    font-size: inherit;
+    font: inherit;
+    margin: inherit;
+    text-decoration: inherit;
+}
+h2 {
+   @media screen and (max-width: 520px) {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        font-size: 1.8em;
+    }
+    @media screen and (min-width: 1024px) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 2.1em;
+    }  
+} 
+h3 {
+    color: white;
+    font-size: 1.46vmax;
+}
+p {
+   @media screen and (max-width: 520px) {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+    @media screen and (min-width: 1024px) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size:20px
+    }  
+} 
+body {
+    color: white;
+    margin: 0px;
+}
+.grid-container {
+    display: grid;
+
+    grid-template-areas: 
+    "header header header"
+    "starbar starbar starbar"
+    "starl main starr"
+    "footer footer footer";
+    justify-content: space-between;
+    grid-template-columns: 0vw auto 0vw;
+
+    @media screen and (min-width: 520px) {
+        grid-template-columns: 3vw auto 3vw;
+    }
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 6vw auto 6vw;
+    }
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: 10vw auto 10vw;
+    } 
+
+    grid-template-rows: auto 15vh 1.1fr auto;
+
+    min-height: 100vh;
+    gap: 0px;
+    background-color: rgb(40, 4, 56);
+}
+.flex-category img {
+    max-width: 100%;
+}
+
+header { grid-area: header; background-color: rgb(10, 10, 10); border-color: yellow; padding: 1vh; border-radius: 6px; border-style: solid; z-index: 2;}
+starl { grid-area: starl; background-color: rgb(40, 4, 56);  padding: 0px;z-index: -1; min-width: 10%;}
+starr { grid-area: starr; background-color: rgb(40, 4, 56);  padding: 0px;z-index: -1; min-width: 10%;}
+starbar { grid-area: starbar; background-color: rgb(40, 4, 56); padding: 0px; z-index: -1;}
+main { grid-area: main; background-color: rgb(10, 10, 10); border-color: yellow; padding: 6px; border-radius: 6px; border-style: solid; border-bottom: 0px; z-index: 1;}
+footer { grid-area: footer; background-color: rgb(10, 10, 10); border-color: yellow; padding: 1vh; padding-left: 2vh; border-radius: 6px; border-style: solid; z-index: 1; }
+
+
+
+.grid-header {
+    display: grid;
+    grid-template-areas:
+    "brand empty nav";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+brand { grid-area: brand; padding:2px;}
+empty { grid-area: empty; padding:2px;}
+nav { grid-area: nav; padding:2px; align-content: flex-end;}
+
+.linkbtn {
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: yellow;
+    padding: 6px;
+    padding-left: 8px;
+}
+
+
+main a {
+    background-color: black;
+    color: white;
+    font-size: 6px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: yellow;
+    padding: 6px;
+    padding-left: 8px;
+    @media screen and (min-width: 520px) {
+        font-size: 12px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
+    @media screen and (min-width: 1024px) {
+        font-size: 24px;
+    } 
+    
+}
+main a:hover {
+    background-color: yellow;
+    color: black;
+}
+footer a {
+    font-size: 24px;
+    color: yellow;
+    margin-left: 1vh;
+    margin: .5vh;
+}
+footer a:hover {
+    background-color: yellow;
+    color: black;
+}
+.dropbtn {
+    background-color: black;
+    color:white;
+    font-size: 18px;
+    display: none;
+    @media screen and (min-width: 520px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 30px;
+        display: inline-block;
+    }
+    @media screen and (min-width: 1024px) {
+        font-size: 50px;
+        display: inline-block;
+    } 
+    border-style: solid;
+    border-radius: 4px;
+    border-color: yellow;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(10, 10, 10);
+    border-color: yellow;
+    border-style: solid;
+    border-radius: 2px;
+    min-width: 160px;
+    z-index: 2;
+    color:white;
+    right: 0px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: yellow; color:black}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: yellow; color: black;}
+
+
+.flex-category {
+    display: flex;
+    
+    flex-direction: row;
+    align-items:stretch;
+    justify-content: space-evenly;
+}
+.flex-category > div {
+    background-color: rgb(10, 10, 10);
+    border-color:yellow;
+    border-radius: 3px;
+    border-style: solid;
+    margin: .5vh;
+    padding: 6px;
+}
+.flex-category div p {
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+
+.flex-card {
+    display: flex;
+    justify-self: center;
+    margin: 1vh;
+    max-width: max-content;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    flex-direction: column;
+    align-items:stretch;
+    align-content: space-around;
+    justify-content: center;
+    @media screen and (max-width: 520px) {
+        margin-left:6px;
+        margin-right:6px;
+        margin-top:2px;
+        margin-bottom:2px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-left:12px;
+        margin-right:12px;
+        margin-top:6px;
+        margin-bottom:6px;
+    }
+    @media screen and (min-width: 1024px) {
+        margin-left:20px;
+        margin-right:20px;
+        margin-top:10px;
+        margin-bottom:10px;
+    } 
+
+}
+.flex-card > div {
+    background-color: rgb(10, 10, 10);
+    border-color:yellow;
+    border-radius: 3px;
+    border-style: solid;
+
+
+}
+.grid-card {
+    display: grid;
+    grid-template-areas:
+    "card emptycard text"
+    "card emptycard page";
+    grid-template-columns: auto 9vw 0.2fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+}
+
+card { grid-area: card; padding:2px; max-width: fit-content;}
+emptycard { grid-area: emptycard; padding:2px; max-height: 30vh;}
+text { grid-area: text; padding:2px;}
+page { grid-area: page; padding:2px;}
+
+.grid-card img {
+    max-width: 30vh;
+    align-content:normal;
+}
+slideshow img {
+    max-width: 30vh;
+    align-content:normal;
+}
+
+.grid-card a {
+    padding: 12px 16px;
+    display: block;
+    align-items: end;
+}
+
+.grid-info {
+    display:grid;
+
+    grid-template-areas: 
+    "lspace slideshow rspace"
+    "info info info";
+
+    grid-template-columns: 125px auto 125px;
+
+    grid-template-rows: auto auto;
+
+    justify-content: center;
+    align-items: start;
+    
+    justify-items: center;
+    min-width: 30vh;
+}
+lspace { grid-area: lspace; padding:2px; scale: 3; margin-top: 10vh;}
+slideshow { grid-area: slideshow; padding:2px;}
+rspace { grid-area: rspace; padding:2px; scale: 3; margin-top: 10vh;}
+info { grid-area: info; padding:2px;}
+h3 {
+    scale: 1.5;
+    justify-self: center;
+}
+form {
+    scale: 1.5;
+    color:white;
+    border-color: yellow;
+    border-radius: 4px;
+    border-style: solid;
+    background-color: black;
+    justify-self: center;
+    padding: 6px;
+}
+form p {
+    margin: 4px;
+}
+main button {
+    color:white;
+    border-color: yellow;
+    border-radius: 4px;
+    border-style: solid;
+    background-color: black;
+}
+main button:hover {
+    color:black;
+    background-color: yellow;
+}
